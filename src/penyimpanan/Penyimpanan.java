@@ -32,7 +32,7 @@ public class Penyimpanan {
     }
     
     public ArrayList<varPenyimpanan> getPenyimpanan() throws SQLException{
-    	String query = "SELECT * FROM penyimpanan WHERE id_penyimpanan = '" + this.penyimpanan.getIdPenyimpanan() + "'";
+    	String query = "SELECT * FROM penyimpanan";
     	this.hasil = this.state.executeQuery(query);
     	
     	while(hasil.next()){

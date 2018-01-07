@@ -29,7 +29,7 @@ public class Kategori {
     }
 
     public boolean insert() throws SQLException{
-    	String query = "INSERT INTO kategori(nama_kategori, icon, tipe) VALUES(?, ?, ?)";
+    	String query = "INSERT INTO kategori(nama, icon, tipe) VALUES(?, ?, ?)";
     	PreparedStatement prep = this.db.prepareStatement(query);
     	prep.setString(1, this.kategori.getNamaKategori());
     	prep.setString(2, this.kategori.getIcon());
